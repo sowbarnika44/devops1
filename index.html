@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>successful</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="data:image/jpeg;base64,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" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>upabovethesky</h4>
+              <span>blogger</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
+              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Reflux HTML CSS Template</h4>
+                  <p>
+                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
+                    sed. Mauris viverra, erat non sagittis gravida, elit dui
+                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
+                    tincidunt quam vitae neque pharetra dignissim eget ut
+                    libero.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Sed sagittis rhoncus velit</h4>
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum fermentum
+                    eleifend nibh, vitae sodales elit finibus pretium.
+                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                    semper.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What I’m good at?</h2>
+            <div class="line-dec"></div>
+            <span
+              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
+              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
+              Nullam eu faucibus diam. Donec eget massa ante.</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>HTML5 &amp; CSS3</h4>
+                <p>
+                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                  at bibendum. Sed ac ante non metus vehicula congue quis eget
+                  eros.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Creative Ideas</h4>
+                <p>
+                  Proin lacus massa, eleifend sed fermentum in, dignissim vel
+                  metus. Nunc accumsan leo nec felis porttitor, ultricies
+                  faucibus purus mollis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Easy Customize</h4>
+                <p>
+                  Integer suscipit condimentum aliquet. Nam quis risus metus.
+                  Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
+                  dui.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Admin Dashboard</h4>
+                <p>
+                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
+                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
+                  leo nec felis porttitor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span
+              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
+              mauris.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>people</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>animals</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>First Title</h4>
+                      <span>free to use our template</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-02.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-02.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Third</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Fourth</h4>
+                      <span>Re-distribution not allowed</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Fifth Awesome</h4>
+                      <span>Ut sollicitudin risus</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Awesome Sixth</h4>
+                      <span>Donec eget massa ante</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
+              efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
