@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM centos:latest
 MAINTAINER sowbarnika
 RUN yum install -y httpd 
 COPY https://www.free-css.com/assets/files/free-css-templates/download/page260/mini-profile.zip /var/www/html/
